@@ -1,0 +1,251 @@
+#admin_login_pannel
+{
+background-color:#FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+padding:0;
+font-size:12px;
+margin:0px auto auto auto;
+color:#000000;
+}
+
+
+/*------------------------------------center content--------------------*/
+.center_content{
+width:900px;
+padding:0px 0 0 0;
+background:none;
+}
+
+.title{
+color:#70389C;
+padding:0px;
+
+font-size:19px;
+margin:10px 0 10px 0;
+}
+
+
+
+/*---------------contact_form------------------*/
+.contact_form{
+width:600px;
+padding:25px;
+padding-top:-20px;
+margin:20px 0 0 15px;
+_margin:20px 0 0 5px;
+border:1px #70389C dashed;
+position:relative;
+margin-left:15% !important;
+}
+
+
+.form_row{
+width:300px;
+_width:300px;
+clear:both;
+padding:15px 0 15px 0;
+_padding:8px 0 5px 0;
+color:#70389C;
+}
+label.contact{
+width:75px;
+float:left;
+font-size:16px;
+text-align:right;
+padding:4px 5px 0 0;
+color: #70389C;
+}
+input.contact_input{
+width:200px;
+height:28px;
+background-color:#fff;
+color:#999999;
+border:1px #DFDFDF solid;
+border-radius:5px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:24px;
+}
+
+input.register{
+width:80px;
+height:28px;
+border:none;
+cursor:pointer;
+text-align:center;
+margin-left:80px;
+float:right;
+color:#FFFFFF;
+background:#70389C;
+}
+
+
+.terms{
+padding:0 0 0 80px;
+}
+.form_subtitle{
+position:relative;
+width:50%;
+height:30px;
+background-color:#70389C;
+margin-top:4px;
+color:#FFFFFF;
+font-size:25px;
+
+}
+.val_error{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#f2f2f2;
+padding-left:20px;
+
+}
+
+
+.signup_val_error{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#FF0000;
+padding-left:20px;
+
+}
+#admin_welcome_div{
+width:50%;
+margin-left:40%;
+margin-top:30px;
+font-family:Arial, Helvetica, sans-serif;
+color:#000066;
+font-size:24px;
+}
+
+#admin_area{
+width:100%;
+min-height:800px !important;
+}
+
+#admin_login_section{
+width:76.5%;
+min-height:820px;
+float:right;
+background:#CCCCCC ;
+
+}
+
+
+
+#admin_menu{
+width:21.5%;
+min-height:100%;
+float:left;
+background:#414045;
+
+}
+
+.admin_section_title{
+color:#ffffff;
+width:45%;
+min-height:40px;
+margin:auto;
+padding:15px;
+font-family:arial;
+font-size:30px;
+}
+
+
+.inputtext{
+width:100%;
+height:35px;
+background-color:#fff;
+color:#999999;
+border:1px #DFDFDF solid;
+border-radius:5px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+margin-top:7px;
+padding:7px;
+}
+.submitbtn{
+height:40px;
+width:45%;
+border-radius:5px;
+margin-top:7px;
+border:1px #DFDFDF solid;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+padding:7px;
+background:602D8D;
+
+}
+.submitbtn:hover{
+  cursor:pointer;
+  
+  background:#70389C;
+   
+}
+
+.admin_main_section{
+width:65%;
+min-height:400px ;
+margin:auto;
+}
+
+.loginbtns{
+height:30px;
+width:25%;
+border-radius:5px;
+margin-top:7px;
+border:1px #DFDFDF solid;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+padding:4px;
+background:#70389C;
+color:#FFFFFF;
+}
+
+.loginbtns:hover{
+  cursor:pointer;
+  
+  background:#414045;
+   
+}
+
+#loginbtn{
+margin-left:70%;
+}
+#changePassbtn{
+height:30px;
+width:55%;
+border:1px #DFDFDF solid;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+padding:4px;
+background:#70389C;
+color:#FFFFFF;
+margin-left:4%;
+}
+#changePassbtn:hover{
+  cursor:pointer;
+  
+  background:#414045;
+
+}
+
+
+#adloginbtn{
+height:30px;
+width:25%;
+border-radius:5px;
+margin-top:7px;
+border:1px #DFDFDF solid;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+padding:4px;
+background:#70389C;
+color:#FFFFFF;
+margin-left:80%;
+}
+
+#adloginbtn:hover{
+  cursor:pointer;
+  
+  background:#414045;
+}

@@ -1,0 +1,80 @@
+
+</div> <!--page_content-->
+</div>
+
+<div class="footer">
+   	  <div class="wrapper">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>Information</h4>
+						<ul>
+						<li><a href="about.php">About Us</a></li>
+						<li><a href="contact.php"><span>Contact Us</span></a></li>
+						<div class="subscribe">
+    						<p style="color:grey; font-size:18px;">Subscribe to our Newsletters</p>
+						    <div class="signup">
+							    <form action="subscribe.php" method="POST">
+							    	<input type="text" name="subscribe_email" placeholder="E-mail address">
+									<input type="submit" value="Sign up" name="btn">
+							    </form>
+						    </div>
+      				</div>
+					
+					
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Buy from us</h4>
+						<ul>
+						<li><a href="about.php">About Us</a></li>
+						<li><a href="contact.php">Customer Service</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="contact.php"><span>Site Map</span></a></li>
+						
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>My account</h4>
+						<ul>
+							<li><a href="login.php">Sign In</a></li>
+							<li><a href="cart.php">View Cart</a></li>
+							<li><a href="faq.php">Help</a></li>
+							<div class="subscribe">
+    						<p style="color:grey; font-size:18px;">UnSubscribe from our Newsletters</p>
+						    <div class="signup">
+							    <form action="unsubscribe.php" method="POST">
+							    	<input type="text" name="subscribe_email" placeholder="E-mail address">
+									<input type="submit" value="UnSubscribe" name="btn">
+							    </form>
+						    </div>
+      				</div>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Contact</h4>
+						<ul>
+							<li><span>+91-9906407579</span></li>
+							<li><span>+91-9018925439</span></li>
+						</ul>
+						<div class="social-icons">
+							<h4>Follow Us</h4>
+					   		  <ul>
+							      <li class="facebook"><a href="https://www.facebook.com/pages/Gz-Arts-and-Crafts/1481634605450077?ref=hl" > </a></li>
+							      <li class="twitter"><a href="#" target="_blank"> </a></li>
+							      <li class="googleplus"><a href="#" target="_blank"> </a></li>
+							      <li class="contact"><a href="#" target="_blank"> </a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>
+			<div class="copy_right">
+				<p>Craftspoint.in © All rights Reseverd</p>
+		   </div>
+     </div>
+ </div>
+</div>
+</body>
+</html>
+
+

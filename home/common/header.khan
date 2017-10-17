@@ -1,0 +1,212 @@
+<?php
+error_reporting(WEB_MODE);
+?>
+<!DOCTYPE HTML>
+<head>
+<title>Kashmir Arts</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/menu.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="js/script.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/nav-hover.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+  $(document).ready(function($){
+    $('#dc_mega-menu-orange').dcMegaMenu({rowItems:'3',speed:'fast',effect:'fade'});
+  });
+</script>
+
+<script type="text/javascript">
+function searchp(thediv,number){
+	if(window.XMLHttpRequest){
+		xmlhttp=new XMLHttpRequest();
+	}
+	else{
+		xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+	}
+	
+	xmlhttp.onreadystatechange = function(){
+		if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+			document.getElementById(thediv).innerHTML = xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open('GET','home/catalog/searchresults.php?page_no='+number,true);
+	
+	document.getElementById('page_content').style.visibility="hidden";
+	xmlhttp.send();
+	
+}
+
+</script>
+
+
+  <div class="wrap">
+	<div class="header"><!--header-->
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.php"><img src="images/logo.png" alt="" /></a>
+			</div>
+			  <div class="header_top_right">
+			    <div class="search_box">
+				    
+				    	<input type="text" id="searchtxtbox" placeholder="Search for Products" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search for Products';}"><input type="submit" value="SEARCH" onClick="search('search_div');">
+				  
+			    </div>
+			    <div class="shopping_cart">
+					<div class="cart">
+						<a href="cart.php" title="View my shopping cart" rel="nofollow">
+							
+								<span class="cart_title">Cart</span>
+									<span class="no_product">
+								<?php	
+								
+								if(isset($_SESSION)){
+								$cart_count=0;
+											foreach($_SESSION as $key => $val){
+												
+												if(preg_match("%^['cart_product_']{13,13}[0-9]{1,2}$%",$key) & $val>0){
+													$cart_count=$cart_count+1;
+												}
+											}
+									}
+									if($cart_count==0){
+											echo "(empty)";
+										}
+										else{
+											echo '('.$cart_count.')';
+										
+										}
+										
+									?>	
+									</span>
+					  </a>
+				  </div>
+		        </div>
+	    
+			
+		   <div class="login">
+		   	   <span><a href="login.php"><img src="images/login.png" alt="" title="login"/></a></span>
+		   </div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="clear"></div>
+ </div>
+	<div class="menu">
+	  <ul id="dc_mega-menu-orange" class="dc_mm-orange">
+		 <li><a href="index.php">Home</a></li>
+    <li><a href="products.php">Products</a>
+    <ul>
+      <li><a href="chain_stitch.php">chainstich</a>
+        <ul>
+          <li><a href="chainstitch_woolen_rugs.php">woolen rugs</a></li>
+          <li><a href="chainstitch_silk_rugs.php">silk rugs</a></li>
+		  <li><a href="chainstitch_cotton_rugs.php">Cotton rugs</a></li>
+          <li><a href="chainstitch_kalim_design.php">kalim designs</a></li>
+          <li><a href="chainstitch_flooring_design.php">flooring designs</a></li>
+         </ul>
+      </li>
+      <li><a href="curtains.php">curtains</a>
+        <ul>
+          <li><a href="curtains_silk_organza.php">silk organza</a></li>
+          <li><a href="curtains_valvet.php">valvet</a></li>
+          <li><a href="curtains_cotton.php">cotton</a></li>
+		  </ul>
+      </li>
+	  
+	   <li><a href="pashmina.php">pashmina</a>
+        <ul>
+          <li><a href="pashmina_printed.php">Printed Pashmina</a></li>
+          <li><a href="pashmina_embroidered.php">Embroidered pashmina</a></li>
+        </ul>
+      </li>
+	  
+	  <li><a href="carpets.php">carpets</a>
+        <ul>
+          <li><a href="carpets_woolen.php">Woolen carpets</a></li>
+          <li><a href="carpets_silk.php">Silk carpets</a></li>
+		   <li><a href="carpets_stapel.php">Stapel carpets</a></li>
+          </ul>
+      </li>
+      <li><a href="cushions.php">cushions</a>
+        <ul>
+          <li><a href="cushion_woolen.php">Woolen</a></li>
+          <li><a href="cushion_silk.php"> Silk</a></li>
+          <li><a href="cushion_cotton.php">Cotton Cushions</a></li>
+          <li><a href="cushion_kalim_design.php">Kalim Designs</a></li>
+		  <li><a href="cushion_flooring_design.php">Flooring Designs</a></li>
+        </ul>
+      </li>
+     
+      
+	  <li><a href="papermachie.php">Paper Machie</a>
+        <ul>
+          <li><a href="papermachie_printed.php">Printed Paper Machie</a></li>
+          
+          </ul>
+      </li>
+	  
+       </ul>
+  </li>
+ 
+
+   <li><a href="gallery.php">Gallery</a></li>
+   <li><a href="videos.php">Videos</a></li>
+   <li><a href="about.php">About</a></li>
+  <li><a href="faq.php">FAQS</a></li>
+  <li><a href="contact.php">Contact</a> </li>
+  <?php
+	  if(isset($_SESSION['Loggedin_User'])){
+			echo '<li><a href="profile.php">Profile</a> </li>';
+	}
+	else{
+		echo '<li><a href="login.php">Login</a> </li>';
+	}
+	
+	?>
+ 
+  <div class="clear"></div>
+</ul>
+</div>
+	
+</div>
+
+<div>
+<script type="text/javascript">
+
+function search(thediv){
+
+	var keywords=document.getElementById('searchtxtbox').value;
+	
+
+	if(window.XMLHttpRequest){
+		xmlhttp=new XMLHttpRequest();
+	}
+	else{
+		xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+	}
+	
+	xmlhttp.onreadystatechange = function(){
+		if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+			document.getElementById(thediv).innerHTML = xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open('GET','home/catalog/search.php?searchtxtbox='+keywords,true);
+	
+	xmlhttp.send();
+	
+}
+
+</script>
+<div id="page_content">
+</div>
+
+</div>
+
+<div id="search_div" >
+

@@ -1,0 +1,66 @@
+<div>
+	<div id="buttons" style="width:87%; height:50px; margin:auto; padding:5px; ">
+		<input type="button" value="Bold" id="boldButton" onclick="doBold();">
+		<input type="button" value="Italic" id="italicButton" onclick="doItalic();">
+		<input type="button" value="Size" id="sizeButton" onclick="doSize();">
+		<input type="button" value="Font" id="fontButton" onclick="doFont();">
+		<input type="button" value="Link" id="linkButton" onclick="doLink();">
+		<input type="button" value="Unlink" id="unlinkButton" onclick="doUnlink();">
+		<input type="button" value="Image" id="imageButton" onclick="doImage();">
+		<input type="button" value="Color" id="colorButton" onclick="doColor();">
+		<input type="button" value="Bg Color" id="colorButton" onclick="doBgColor();">
+	</div>
+	<div>
+		<iframe name="myEditor" id="myEditor" style="background:#ffffff; width:90%;height:350px; margin-bottom:20px; margin-top:15px; margin-left:50px;"></iframe>
+	</div>
+</div>
+<script type="text/javascript">
+	myEditor.document.designMode="on";
+	//execCommand(command,false,null)
+	function doBold(){
+		myEditor.document.execCommand('bold',false,null);
+	}
+	function doItalic(){
+		myEditor.document.execCommand('italic',false,null);
+	}
+	function doSize(){
+		var size = prompt("Enter size");
+		myEditor.document.execCommand('fontSize',false,size);
+	}
+	function doFont(){
+		var font = prompt("Enter font value");
+		myEditor.document.execCommand('fontName',false,font);
+	}
+	function doLink(){
+		var link = prompt("Enter linked page",'http://');
+		myEditor.document.execCommand('createLink',false,link);
+	}
+	function doUnlink(){
+		myEditor.document.execCommand('unlink',false,null);
+	}
+	function doImage(){
+		var src = prompt("Enter source of image");
+		myEditor.document.execCommand('insertimage',false,src);
+	}
+	function doColor(){
+		var color = prompt("Enter a color");
+		myEditor.document.execCommand('foreColor',false,color);
+	} 
+	function doBgColor(){
+		var color = prompt("Enter a color");
+		myEditor.document.execCommand('backColor',false,color);
+	} 
+	
+</script>
+
+<style>
+	#buttons input{
+		margin:auto;
+		background-color:#70389C;
+		color:white;
+		font-size: 16px;
+		cursor:pointer;
+		padding:5px;
+		width:70px;
+	}
+</style>

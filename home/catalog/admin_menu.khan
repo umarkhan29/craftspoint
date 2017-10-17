@@ -1,0 +1,17 @@
+<div id="admin_menu">
+<ul class="dc_mm-orange">
+          <li id="first_admin_li"class="admin_li"><a href="admin_section.php">Admin Home</a></li>
+		  <li class="admin_li"><a href="gallery_upload.php">Gallery upload</a></li>
+          <li class="admin_li"><a href="gallery_delete.php">Gallery delete</a></li>
+		  <li class="admin_li"><a href="slideshow_update.php">Slideshow update</a></li>
+          <li class="admin_li"><a href="products_upload.php">Product upload</a></li>
+		   <li class="admin_li"><a href="products_update.php">Product Update</a></li>
+          <li class="admin_li"><a href="products_delete.php">Product delete</a></li>
+		  <li class="admin_li"><a href="video_upload.php">Video upload</a></li>
+		  <li class="admin_li"><a href="video_delete.php">Video delete</a></li>
+		  <li class="admin_li"><a href="users.php">Customers</a></li>
+		  <li class="admin_li"><a href="unregistered_customers.php">Unregistered Customers</a></li>
+		  <li class="admin_li"><a href="shipping_cost.php">Update Shipping Cost</a></li>
+		  <li class="admin_li"><a href="newsletters.php">Newsletters</a></li>
+   </ul>
+</div>
